@@ -26,7 +26,7 @@ let a = 5
 let b :Float = 2.2
 let c = 3.9
 
-let abcAddInt = a + Int(b) + Int(c)
+let abcAddInt = Int(Double(a) + Double(b) + c)
 let abcAddFloat = Float(a) + b + Float(c)
 let abcAddDouble = Double(a) + Double(b) + c
 
