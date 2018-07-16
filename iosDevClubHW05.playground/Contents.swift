@@ -40,6 +40,9 @@ if fromNyToMyBday <= firstQuartal {
     print ("In fourth quartal")
 }
 
+//3 Variable 5 unary ++prefix and postfix++ operators - not actual for swift 3
+
+//4 chess desc 8 * 8. We have horisontal and vertical number a(x, y), what color of this field
 
 
 
