@@ -77,7 +77,7 @@ if serverTuple3.message != nil{
 
 //3 student Tuple( name, car number, rating) 5 stubent. firstly nil date . Names, After if he have car - add number, if rating(0-5) - add rating.
 //print all student
-let student1 : (name: String!, carNumber: String?, rating: Int?)
+let student1 : (name: String, carNumber: String?, rating: Int?)
 let student2 : (name: String, carNumber: String?, rating: Int?)
 let student3 : (name: String, carNumber: String?, rating: Int?)
 let student4 : (name: String, carNumber: String?, rating: Int?)
