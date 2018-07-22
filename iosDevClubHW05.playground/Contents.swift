@@ -44,5 +44,8 @@ if fromNyToMyBday <= firstQuartal {
 
 //4 chess desc 8 * 8. We have horisontal and vertical number a(x, y), what color of this field
 
+let chess = (x:4, y:8)
+var color = (chess.x + chess.y) % 2 == 0 ? "Black" : "White"
+print(color)
 
 
