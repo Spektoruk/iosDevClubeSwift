@@ -48,8 +48,14 @@ longString.count
 //Используя цикл for определите под каким индексов в строке находится этот символ
 let alphabet = "abcdefghijklmnopqrstuvwxyz"
 var x = 0
-let constant = "c"
-for constant in alphabet{
-    x ++
+var constant = "k"
+for character in alphabet{
+    x += 1
+    if constant == String(character) {
+        break
+    }
 }
-print(x)
+print("Index \(constant) = \(x)")
+
+print(alphabet.count)
+
