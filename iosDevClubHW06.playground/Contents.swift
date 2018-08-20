@@ -28,10 +28,10 @@ let num5 = Int(e) ?? 0
 let summ = num1 + num2 + num3 + num4 + num5
 print(summ)
 
-let summString :String = String(num1) + String(num2) + String(num3) + String(num4) + String(num5)
+let summString = String(num1) + String(num2) + String(num3) + String(num4) + String(num5)
 print(summString)
 
-let summString2 :String = "\(num1) + \(num2) + \(num3) + \(num4) + \(num5)"
+let summString2 = "\(num1) + \(num2) + \(num3) + \(num4) + \(num5)"
 print(summString2)
     
 
