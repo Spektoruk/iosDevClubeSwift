@@ -1,5 +1,4 @@
 //: Playground - noun: a place where people can play
-
 import Cocoa
 import Foundation
 
@@ -12,7 +11,6 @@ import Foundation
 //Когда посчитаете сумму, то представьте свое выражение в виде строки
 //Например: 5 + nil + 2 + 3 + nil = 10
 //но в первом случае используйте интерполяцию строк, а во втором конкатенацию
-
 let a = "2"
 let b = "123safads"
 let c = "3"
@@ -33,7 +31,7 @@ print(summString)
 
 let summString2 = "\(num1) + \(num2) + \(num3) + \(num4) + \(num5)"
 print(summString2)
-    
+
 
 //2. Поиграйтесь с юникодом и создайте строку из 5 самых классных по вашему мнению символов,
 //можно использовать составные символы. Посчитайте длину строки методом SWIFT и Obj-C
@@ -58,4 +56,3 @@ for character in alphabet{
 print("Index \(constant) = \(x)")
 
 print(alphabet.count)
-
