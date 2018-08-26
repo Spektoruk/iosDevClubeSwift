@@ -42,11 +42,12 @@ for i in (0..<monthesTuples.count).reversed(){
 print("---")
 //- для произвольно выбранной даты (месяц и день) посчитайте количество дней до этой даты от начала года
 //
+let dob = (month: 8, day: 17)
 var dayAlexey = 0
-for i in 0..<7{
+for i in 0..<(dob.month - 1){
     dayAlexey += dayInTheMonths[i]
 }
-dayAlexey = dayAlexey + 17
+dayAlexey += dob.day
 print(dayAlexey)
 print("---")
 //2. Сделайте первое задание к уроку номер 4 используя массивы:
