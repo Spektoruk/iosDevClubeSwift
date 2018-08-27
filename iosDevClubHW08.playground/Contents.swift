@@ -64,11 +64,12 @@ var chess = [String: Bool]()
 for i in 0..<alph.count {
     for j in 0..<num.count{
 //    print(alph[i] + num[j])
-        if i % 2 == j % 2{
-            chess[alph[i] + num[j]] = true
-        }else{
-            chess[alph[i] + num[j]] = false
-        }
+//        if i % 2 == j % 2{
+//            chess[alph[i] + num[j]] = true
+//        }else{
+//            chess[alph[i] + num[j]] = false
+//        }
+        chess[alph[i] + num[j]] = (i % 2 == j % 2)
     }
 }
 print("---")
