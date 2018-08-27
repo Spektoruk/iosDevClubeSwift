@@ -52,8 +52,24 @@ print("---")
 for key in months.keys{
     print("\(key) has \(months[key]!) days")
 }
-
+print("---")
 //3. Создать дикшинари , в которой ключ это адрес шахматной клетки (пример: a5, b3, g8), а значение это Bool. Если у клетки белый цвет, то значение true, а если черный - false. Выведите дикшинари в печать и убедитесь что все правильно.
 //
 //Рекомендация: постарайтесь все сделать используя вложенный цикл (объяснение в уроке).
 
+let alph = ["a", "b", "c", "d", "e", "f", "g", "h"]
+let num = ["1", "2", "3", "4", "5", "6", "7", "8"]
+
+var chess = [String: Bool]()
+for i in 0..<alph.count {
+    for j in 0..<num.count{
+//    print(alph[i] + num[j])
+        if i % 2 == j % 2{
+            chess[alph[i] + num[j]] = true
+        }else{
+            chess[alph[i] + num[j]] = false
+        }
+    }
+}
+print("---")
+print(chess)
