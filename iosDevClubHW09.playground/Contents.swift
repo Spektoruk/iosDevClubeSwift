@@ -66,3 +66,12 @@ for ship in ships{
         print("Missed")
     }
 }
+
+//for ship in ships{
+//    switch ship {
+//    case shoot:
+//        print("Kill")
+//    default:
+//        print("Missed")
+//    }
+//}
