@@ -44,6 +44,7 @@ default:
 //3. У вас есть имя отчество и фамилия студента (русские буквы). Имя начинается с А или О, то обращайтесь к студенту по имени, если же нет, то если у него отчество начинается на В или Д, то обращайтесь к нему по имени и отчеству, если же опять нет, то в случае если фамилия начинается с Е или З, то обращайтесь к нему только по фамилии. В противном случае обращайтесь к нему по полному имени.
 //
 let fullName = ("Спекторук", "Алексей", "Сергеевич")
+//
 switch fullName {
 case _ where fullName.1.hasPrefix("А") || fullName.1.hasPrefix("О"):
     print("Hello \(fullName.1) !")
@@ -54,6 +55,18 @@ case _ where fullName.0.hasPrefix("Е") || fullName.0.hasPrefix("З"):
 default:
    print("Hello \(fullName.0) \(fullName.1) \(fullName.2) !")
 }
+//
+switch fullName {
+case (_, let name, _) where name.hasPrefix("А") || name.hasPrefix("О"):
+    print("Hello \(name) !")
+case (_, _, let second) where second.hasPrefix("В") || second.hasPrefix("Д"):
+    print("Hello \(second) !")
+case (let fam, _, _) where fam.hasPrefix("Е") || fam.hasPrefix("З"):
+    print("Hello \(fam) !")
+default:
+    print("Hello \(fullName.0) \(fullName.1) \(fullName.2) !")
+}
+
 //4. Представьте что вы играете в морской бои и у вас осталось некоторое количество кораблей на поле 10Х10 (можно буквы и цифры, а можно только цифры). Вы должны создать свитч, который примет тюпл с координатой и выдаст один из вариантов: мимо, ранил, убил.
 let ships = [(3, 8), (1, 1), (5, 3), (6, 2), (7, 9)]
 let shoot = (6, 2)
