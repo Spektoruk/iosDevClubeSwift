@@ -66,3 +66,17 @@ for ship in ships{
         print("Missed")
     }
 }
+
+
+let shi = [(3, 8), (1, 1), (5, 3), (6, 2), (7, 9)]
+let sho = (6, 2)
+var n = 0
+for n in shi{
+    switch n {
+    case sho:
+        print("Kill")
+    default:
+        print("Missed")
+    }
+    n += 1
+}
