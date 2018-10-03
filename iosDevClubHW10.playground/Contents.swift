@@ -46,17 +46,23 @@ func reverted(ar:[Int]) -> [Int]{
 }
 print(reverted(ar:[1, 2, 3, 4, 5]))
 
-func revertedRange(se: Int...) -> [Int]{
-    let array = [Int]()
-    for n in se{
+func reversedA(a:[Any]) -> [Any]{
+    return a.reversed()
+}
+print(reversedA(a: [1, 3, 5, 7, 9]))
+
+func revertedRange(range: Int...) -> [Int]{
+    var array = [Int]()
+    for n in range{
         array.append(n)
     }
-    return reverted(array)
+    return reverted(ar: array)
 }
-
-print(revertedRange(se: 1...3))
+print(revertedRange(range: 1, 3, 100))
 
 //4. Разберитесь с inout самостоятельно и выполните задание номер 3 так, чтобы функция не возвращала перевернутый массив, но меняла элементы в существующем. Что будет если убрать inout?
 //
+
+
 //5. Создайте функцию, которая принимает строку, убирает из нее все знаки препинания, делает все гласные большими буквами, согласные маленькими, а цифры меняет на соответствующие слова (9 -> nine и тд)
 
